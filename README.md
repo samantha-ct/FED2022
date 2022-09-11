@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Samantha Tjin-A-Lim
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://elrow.com/en/events/894/london-11132022
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagina 
+  <img src="./FED/homepagina.jpg" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Upcoming events pagina 
+  <img src="./FED/upcomingeventspagina.jpg" width="375px" alt="upcoming events pagina">
  
 </details>
 
@@ -57,11 +57,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - hij leest ook "nieuwe regel" voor
+  - hij verteld steeds welk tekstelement je bent 
+  - hij kan niet de afbeelding uitleggen alleen als er tekst in staat
+  - de cookies leest hij ook voor
+  - sommige koppen zijn niet samengevoegd
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De website doorlopen met de screenreader ging niet heel soepel. Op de website zijn de afbeelding van de events belangrijk, want daar staat de meeste informatie op. De screenreader kan natuurlijk de afbeeldingen niet voorlezen en hierdoor mist er soms wat informatie. Verder worden sommige koppen niet samengevoegd en zou je eigenlijk niet kunnen weten dat bepaalde getallen bij bepaalde woorden horen.
 
 
   #### Muis en Toetsenbord 
@@ -71,15 +74,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Door de elastiekjes om mijn vinger kon ik totaal niet door de site heen scrollen. Je vingers zitten zo dicht op elkaar dat je ze bijna niet kan bewegen en dus ook niet naar beneden kan scrollen.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Met de brillen kijken ging eigenlijk best gemakkelijk. Ik kon met de meeste brillen nog steeds de meeste dingen van mijn website zien. Alleen bij sommige brillen werd de tekst heel wazig waardoor je heel dichtbij het scherm of heel gefoccused moest zijn wilde je nog iets ervan lezen. Verder waren de kleuren soms wel moeilijk te onderscheiden en te zien, aangezien mijn website gebruik maakt van heel veel velle kleuren.
 
 </details>
 
