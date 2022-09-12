@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
-  <img src="./FED/homepagina.jpg" width="375px" alt="home pagina">
+  <img src="./FED/procesverslag/home.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Upcoming events pagina 
-  <img src="./FED/upcomingeventspagina.jpg" width="375px" alt="upcoming events pagina">
+  <img src="./FED/procesverslag/upcomingevents.png" width="375px" alt="upcoming events pagina">
  
 </details>
 
@@ -89,10 +89,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./FED/procesverslag/home2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="./FED/procesverslag/upcomingevents2.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./FED/procesverslag/home2.2.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./FED/procesverslag/upcomingevents2.2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
