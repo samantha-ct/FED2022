@@ -96,9 +96,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/home2.2.png" width="375px" alt="breakdown van een dynamisch deel">
   <img src="readme-images/upcomingevents2.2.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -111,27 +108,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De html ging best gemakkelijk, vooral door middel van de breakdownschets. Met de css heb ik een klein begin gemaakt wat ook wel prima te doen was. Alleen liep ik vast hoe je de verschillende sections van elkaar kan onderscheiden zonder classes te gebruiken.
 
+  <img src="readme-images/htmlcode.png" width="375px" alt="stuk html code">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1: Samantha       | student 2: Jaiden  | student 3: Ying| 
+  | ---                       | ---                | ---            |             
+  | sections onderscheiden    | buttons in header  | verstopte link |
+  | carroussel zonder classes |                    | hamburger menu |
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - sections -> nth-of-type() gebruiken + tussen haakjes hoeveelste section
+  - carroussel -> code van de docent gebruiken dus moet classes
+  
 </details>
 
 
