@@ -10,11 +10,19 @@
 </head>
 <body>
     <header>
-        <h1>elrow</h1>
-        <p>Together we make magic happen</p>
+        <h1><img src="./images/logo.png" alt="logo elrow roze"></h1>
+        <!-- <p>Together we make magic happen</p> -->
         <a href="events.html">upcoming events</a>
-        <button type="button"></button>
+        <button><img src="./images/openen.png"></button> 
+
         <nav>
+            <section>
+                <img src="./images/logowit.png" alt="logo elrow wit">
+                <button><img src="./images/sluiten.png"></button> 
+            </section>
+
+            <button>cambiar a español</button>
+
             <ul>
                 <li><a href="events.html">Upcoming events</a></li>
                 <li><a href="#">Our Creative World</a></li>
@@ -29,31 +37,68 @@
                 <li><a href="#">Our history</a></li>
                 <li><a href="#">Press & Resources</a></li>
             </ul>
-          </nav>
+
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Purchase Conditions</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#"><img src="./images/facebookwit.png" alt="logo facebook in het wit"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/instagramwit.png" alt="logo instagram in het wit"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/twitterwit.png" alt="logo twitter in het wit"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/linkedinwit.png" alt="logo linkedin in het wit"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/youtubewit.png" alt="logo youtube in het wit"></a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main> 
-        <section>
+        <button aria-label="help button"><img src="./images/vraagteken.png">Help</button>
+        <section id="bolletjesAndAutoScroll" class="caroCarrousel">
             <ul>
-                <li>
+                <li id="element1">
                     <img src="./images/croatie.png" alt="afbeelding elrow croatie">
                 </li>
-                <li>
+                <li id="element2">
                     <img src="./images/ibiza.png" alt="afbeelding elrow ibiza">
                 </li>
-                <li>
+                <li id="element3">
                     <img src="./images/malta.png" alt="afbeelding elrow malta">
                 </li>
-                <li>
+                <li id="element4">
                     <img src="./images/tenerife.png" alt="afbeelding elrow tenerife">
                 </li>
             </ul>
+
+            <nav>
+                <ul>
+                  <li><a href="#element1" aria-label="go to element1"></a></li>
+                  <li><a href="#element2" aria-label="go to element2"></a></li>
+                  <li><a href="#element3" aria-label="go to element3"></a></li>
+                  <li><a href="#element4" aria-label="go to element4"></a></li>
+                </ul>
+            </nav>
+
+            <button aria-label="start/stop autoscroll"></button>
         </section>
 
-        <section>
+        <section id="bolletjesAndAutoScroll" class="caroCarrousel">
             <h2>Upcoming events</h2>
             <ul>
-                <li>
+                <li id="element1.1">
                     <article>
                         <h3>Ibiza, <em>spain</em></h3> <!-- em om in css alleen spain vorm te geven -->
                         <p><time datetime="2022-09-17">Saturday, September 17 2022</time></p> 
@@ -62,7 +107,7 @@
                         <a href="#">buy tickets</a>
                     </article>
                 </li>
-                <li>
+                <li id="element2.1">
                     <article>
                         <h3>Malta, <em>malta</em></h3> 
                         <p><time datetime="2022-09-24">Saturday, September 24 2022</time></p>
@@ -71,7 +116,7 @@
                         <a href="#">buy tickets</a>
                     </article>
                 </li>
-                <li>
+                <li id="element3.1">
                     <article>
                         <h3>Bologna, <em>italy</em></h3>
                         <p><time datetime="2022-10-08">Saturday, October 8 2022</time></p>
@@ -80,7 +125,7 @@
                         <a href="#">buy tickets</a>
                     </article>
                 </li>
-                <li>
+                <li id="element4.1">
                     <article>
                         <h3>Amsterdam, <em>netherlands</em></h3>   
                         <p><time datetime="2022-10-22">Saturday, October 22 2022</time></p>
@@ -91,10 +136,19 @@
                 </li>
             </ul>
 
+            <nav>
+                <ul>
+                  <li><a href="#element1.1" aria-label="go to element1.1"></a></li>
+                  <li><a href="#element2.1" aria-label="go to element2.1"></a></li>
+                  <li><a href="#element3.1" aria-label="go to element3.1"></a></li>
+                  <li><a href="#element4.1" aria-label="go to element4.1"></a></li>
+                </ul>
+            </nav>
+
             <div>
                 <a href="events.html">show all</a>
-                <button type="button"></button>
-                <button type="button"></button>
+                <button aria-label="vorige event"><img src="./images/pijllinks.png" ></button>
+                <button aria-label="volgende event"><img src="./images/pijlrechts.png"></button>
             </div>
         </section>
 
@@ -106,20 +160,20 @@
                     <p>680</p>
                 </li>
                 <li>
-                    <h3>attendees</h3>
-                    <p>3.8m</p>
-                </li>
-                <li>
                     <h3>stage at electronic music festivals</h3>
                     <p>48</p>
                 </li>
                 <li>
-                    <h3>elrow festivals</h3>
-                    <p>8</p>
-                </li>
-                <li>
                     <h3>countries</h3>
                     <p>48</p>
+                </li>
+                <li>
+                    <h3>attendees</h3>
+                    <p>3.8m</p>
+                </li>
+                <li>
+                    <h3>elrow festivals</h3>
+                    <p>8</p>
                 </li>
                 <li>
                     <h3>cities</h3>
@@ -128,11 +182,11 @@
             </ul>
         </section>
         
-        <section>
+        <section id="bolletjesAndAutoScroll" class="caroCarrousel">
             <h2>Our</h2>
             <h2>Creative World</h2>
                 <ul>
-                    <li>
+                    <li id="element1.2">
                         <article>
                             <h3>Own Festivals</h3>
                             <p>Welcome to elrow Fest! There is no better way to know the creative world behind elrow than through our festivals. Inside them, you will discover our immersive universe!</p>
@@ -140,7 +194,7 @@
                             <a href="#"></a>
                         </article>
                     </li> 
-                    <li>
+                    <li id="element2.2">
                         <article>
                             <h3>elrow Residencies</h3>
                             <p>Get to know the different faces of our brand. Explore Our creative world without limits. We make any idea come true, no matter how crazy it may be!</p>
@@ -148,7 +202,7 @@
                             <a href="#"></a>
                         </article>
                     </li> 
-                    <li>
+                    <li id="element3.2">
                         <article>
                             <h3>Special Projects</h3>
                             <p>Those cities of the world have become our home to the lake in recent years and that we visit at least three times a year.</p>
@@ -156,7 +210,7 @@
                             <a href="#"></a>
                         </article>
                     </li> 
-                    <li>
+                    <li id="element4.2">
                         <article>
                             <h3>elrow stages</h3>
                             <p>Those festivals in the world in which we have had the opportunity to set up our own stage.</p>
@@ -165,11 +219,20 @@
                         </article> 
                     </li> 
                 </ul>
+                
+                <nav>
+                    <ul>
+                      <li><a href="#element1.2" aria-label="go to element1.2"></a></li>
+                      <li><a href="#element2.2" aria-label="go to element2.2"></a></li>
+                      <li><a href="#element3.2" aria-label="go to element3.2"></a></li>
+                      <li><a href="#element4.2" aria-label="go to element4.2"></a></li>
+                    </ul>
+                </nav>
 
             <div>
                 <a href="#">show all</a>
-                <button type="button"></button>
-                <button type="button"></button>
+                <button aria-label="volgende event"><img src="./images/pijllinks.png"></button>
+                <button aria-label="volgende event"><img src="./images/pijlrechts.png"></button>
             </div>
         </section>
 
@@ -203,41 +266,64 @@
 
     <footer> 
         <section>
+            <nav>
+                <ul>
+                    <h2>sections</h2>
+                    <li><a href="events.html">Upcoming events</a></li>
+                    <li><a href="#">Our Creative World</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Festivals</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Artists Community</a></li>
+                    <li><a href="#">VIP Experience</a></li>
+                    <li><a href="#">Our history</a></li>
+                    <li><a href="#">In the news</a></li>
+                    <li><a href="#">Press releases</a></li>
+                    <li><a href="#">Press materials</a></li>
+                </ul>
+
+                <ul>
+                    <h2>external</h2>
+                    <li><a href="#">Up&Coming</a></li>
+                    <li><a href="#">elrow Island</a></li>
+                    <li><a href="#">Hurley x elrow</a></li>
+                </ul>
+
+                <ul>
+                    <h2>contact</h2>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Business inquires</a></li>
+                    <li><a href="#">Work with us</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Purchase Conditions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/facebook.png" alt="logo facebook in het zwart"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/instagram.png" alt="logo instagram in het zwart"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/twitter.png" alt="logo twitter in het zwart"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/linkedin.png" alt="logo linkedin in het zwart"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/youtube.png" alt="logo youtube in het zwart"></a>
+                    </li>
+                </ul>
+            </nav>
             <img src="./images/logo2.png" alt="logo Elrow in het zwart">
-            <h2>sections</h2>
-            <ul>
-                <li><a href="events.html">Upcoming events</a></li>
-                <li><a href="#">Our Creative World</a></li>
-                <li><a href="#">Themes</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Festivals</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Our Values</a></li>
-                <li><a href="#">Artists Community</a></li>
-                <li><a href="#">VIP Experience</a></li>
-                <li><a href="#">Our history</a></li>
-                <li><a href="#">In the news</a></li>
-                <li><a href="#">Press releases</a></li>
-                <li><a href="#">Press materials</a></li>
-            </ul>
-
-            <h2>external</h2>
-            <ul>
-                <li><a href="#">Up&Coming</a></li>
-                <li><a href="#">elrow Island</a></li>
-                <li><a href="#">Hurley x elrow</a></li>
-            </ul>
-
-            <h2>contact</h2>
-            <ul>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Business inquires</a></li>
-                <li><a href="#">Work with us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Purchase Conditions</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Cookies Policy</a></li>
-            </ul>
         </section>
     </footer>
     <script src="js/elrow.js"></script>

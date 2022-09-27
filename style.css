@@ -1,0 +1,926 @@
+/******************/
+  /* css reset */
+/*****************/
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/****************/
+  /* kleuren */
+/***************/
+:root{
+    --hoofdKleur: deeppink;
+
+    --headerKleur: rgba(255,255,255,0.98); 
+
+    --navKleur: rgba(76, 0, 130, 0.961); 
+
+    --accentKleur: blueviolet;
+    --accentKleur2: indigo;
+    --accentKleur3: blue;
+    --accentKleur4: dimgrey;
+    --accentKleur5: white; 
+
+    --bolletjesKleur: #e8e1e4;
+    --bolletjesKleur2: rgba(137, 43, 226, 0.282);
+    --bolletjesKleur3: rgba(0, 0, 255, 0.269);
+
+    --tekstKleur: grey;
+    --footerTekstKleur: black;
+}
+
+
+
+
+body{
+    margin-right: 0em;
+    margin-left: 0em;
+    font-family:Arial,sans-serif;
+}
+
+button {
+    cursor:pointer;   /* waar een link is word de muis een hand */
+} 
+
+
+
+
+
+/*************/
+  /* logo */
+/************/
+header img{ 
+    padding-left: 0.5em;
+    width: 3em;
+    height: 1.5em;
+}
+
+h2{
+    font-size: 3.5em;
+    padding-left: 0.5em;
+    font-weight:bolder;
+}
+
+h3{
+    color: var(--accentKleur4);
+    padding-left: 0.5em;
+}
+
+p{
+    color: var(--tekstKleur);
+    padding-left: 0.5em;
+}
+
+header{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    height: 6em;
+    position: sticky; /* blijft bovenaan tijdens het scrollen */
+    top:0;
+    background: var(--headerKleur);
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/*****************************/
+  /* tekst naast het logo */
+/***************************/
+/*header p{  
+    width: 9em;
+    margin-left: 1em;
+    margin-right: auto; /* de margin-right wordt zo groot als de ruimte die over is bron: flexbox opdracht
+} */
+
+
+
+
+/*******************************/
+  /* "upcoming events" knop */
+/******************************/
+header a{  
+    color: var(--accentKleur5);
+    background-color: var(--accentKleur2);
+    border-radius: 0.6em;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-weight: bold;
+    padding-top: 0.7em;
+    padding-right: 1em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+    margin-left: 9em;
+    margin-right: 0.5em;
+}
+
+
+
+
+/****************************/
+  /* het hamburger menu */
+/**************************/
+header button{
+    background: none;
+    border: none;
+}
+
+header button img{
+    width: 3em;
+    height: 2em;
+}
+
+
+
+/*******************************/
+  /* de navigatie */
+/******************************/
+header nav {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	
+    overflow-y: auto;
+
+	background-color:var(--navKleur);
+	
+	transform:translateX(-100%);
+	
+	transition-duration:.3s;
+}
+
+header nav.open {
+	transform:translateX(0%);
+} 
+
+/* logo + sluit icon */
+header section{
+    display: flex;
+    gap: 16em;
+}
+
+/* logo */
+header section img{
+    width: 7em;
+    height: 3em;
+    margin-left: 0.5em;
+    margin-top: 2em;
+}
+
+/* sluit icon */
+header section button{
+    background: none;
+    border: none;
+}
+
+header section button img{
+    width: 4em;
+    height: 2em;
+}
+
+/* taal button */
+header nav button{
+    color: var(--accentKleur5);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: none;
+    border: 6em;
+    border-radius: 0.8em;
+    border-color: var(--accentKleur5);
+
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+/* de tekst */
+header nav a{
+    background: none;
+    text-transform: none;
+    margin-left: 0.5em;
+}
+
+header ul:nth-of-type(1) li{
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: var(--hoofdKleur);
+}
+
+
+
+/* algemene informatie in nav */
+header ul:nth-of-type(2){
+    margin-top: 3em;
+    margin-left: 0.7em;
+    column-count: 2;
+    column-gap: 2em;
+}
+
+header ul:nth-of-type(2) a{
+    font-size: 1em;
+    font-weight:normal;
+}
+
+/* de social media icons */
+header ul:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+header ul:nth-of-type(3) img{
+    width: 2em;
+    height: 2em;
+}
+
+
+
+
+/*********************/
+  /* help button */
+/*******************/
+main > button{  /* meest directe button van de main */
+    font-size: 1em;
+    background-color: var(--hoofdKleur);
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+
+    appearance: none;
+    border: none;
+    border-radius: 1em;
+    
+    font-weight: bold;
+
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > button img{
+    height: 1em;
+    width: 1em;
+    margin-right: 0.4em;
+}
+
+
+
+
+/***************************************************************************/
+  /* caroussel bron: docent link: https://codepen.io/shooft/pen/oNzGJMM */
+/**************************************************************************/
+.caroCarrousel {
+    position:inherit;
+	outline:none;
+}
+
+/* de carrousel elementen container */
+.caroCarrousel > ul {
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+    display: flex;
+    overflow: auto; /* handmatig scrollen is mogelijk */
+      
+    scroll-snap-type: inline mandatory; /* snappen als er gescrolled wordt - andere helft bij li */
+
+    -webkit-overflow-scrolling: touch; /* scrollbar zoveel mogelijk verbergen voor iOS*/
+    -ms-overflow-style: none; /* scrollbar zoveel mogelijk verbergen voor IE */
+    scrollbar-width: none; /* scrollbar zoveel mogelijk verbergen voor firefox */
+}
+  
+.caroCarrousel > ul::-webkit-scrollbar {
+    display: none; /* scrollbar zoveel mogelijk verbergen voor chrome, safari en edge*/
+}
+  
+/* de carrousel elementen */
+.caroCarrousel > ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    
+    scroll-snap-align:center; /* snappen als er gescrolled wordt - andere helft bij ul */
+}
+  
+/* de stijlen voor jouw content hier */
+.caroCarrousel > ul li > img {
+    display: block;
+    width: 100%;
+    height: 20em;
+    padding: 2em;
+    border-radius: 3em;
+}
+  
+/* de bolletjes container */
+.caroCarrousel nav ul {
+    position:inherit;
+    left: 2em; 
+    right: 2em;
+    bottom: 0;
+    margin: 0;
+    padding: 0 0 .5em;
+    list-style: none;
+      
+    display: flex;
+    justify-content: center;
+    gap:.4em;
+}
+  
+/* een bolletje container */
+.caroCarrousel > nav li {
+    flex-basis: 1.2em;
+    aspect-ratio: 1/1;
+}
+  
+/* de bolletjes */
+.caroCarrousel > nav a {
+    display: block;
+    width:1em;
+    height:1em;
+    
+    text-decoration: none;
+
+    border-radius: 50%;
+    outline: none;
+    
+    transition: 0.5s;
+}
+
+/* bolletjes eerste carrousel */
+.caroCarrousel:nth-of-type(1) > nav a {
+    background-color: var(--bolletjesKleur);
+}
+
+.caroCarrousel:nth-of-type(1) > nav a.current {
+    background-color: var(--hoofdKleur);
+}
+
+/* bolletjes section "upcoming events" */
+.caroCarrousel:nth-of-type(2) > nav a {
+    background-color:var(--bolletjesKleur2);
+}
+
+.caroCarrousel:nth-of-type(2)> nav a.current {
+    background-color: var(--accentKleur2);
+}
+
+/* bolletjes section "our creative world" */
+.caroCarrousel:nth-of-type(3) > nav a {
+    background-color:var(--bolletjesKleur3);
+}
+
+.caroCarrousel:nth-of-type(3) > nav a.current {
+    background-color: var(--accentKleur3);
+}
+
+/* play/pause button */
+.caroCarrousel > button {
+    background-color: var(--accentKleur5);
+    border: none;
+    outline: none;
+} 
+
+
+
+
+/****************************************************************/
+  /* alle vakken waar de verschillende onderwerpen in staan */
+/**************************************************************/
+article{ 
+    border-radius: 0.7em;
+    background-color:var(--accentKleur5);
+    box-shadow: 0.4em 0.4em 0.4em -0.5em grey;
+    height: 43em;
+    width: 29em;
+    margin-left: 0.8em;
+    margin-right: 0.5em;
+    margin-bottom: 2.5em;
+}
+
+article img{
+    border-radius: 0.7em;
+    height: 25em;
+    width: 25em;
+}
+
+
+
+
+/***********************************/
+  /* section "upcoming events" */
+/*********************************/
+section:nth-of-type(2){
+    background-image: linear-gradient( /* gekleurd vlak achter de tekst */
+    182deg, 
+    transparent 4em, 
+    rgba(130, 15, 130, 0.144) 
+    4em)
+}
+
+section:nth-of-type(2) h2{ 
+    color:var(--accentKleur);
+    width: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+} 
+
+/* section:nth-of-type(2) ul{
+    display: flex;
+    overflow-x: auto; /* scrollbaar
+    gap:1em; /* ruimte ertussen 
+} */
+
+section:nth-of-type(2) article{
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+}
+
+section:nth-of-type(2) article h3{
+    order: 3;
+    margin-top: 1em;
+}
+
+section:nth-of-type(2) article p:nth-of-type(1) {
+    order: 2;
+    margin-top: 1em;
+}
+
+section:nth-of-type(2) article p:nth-of-type(2) {
+    order: 4;
+    margin-top: 1em;
+}
+
+section:nth-of-type(2) article img{
+    order: 1;
+    width:100%;
+}
+
+/* de land namen */
+h3 em{  
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-style: normal;
+}
+
+/* de datum */
+section:nth-of-type(2) p:nth-of-type(1){ 
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    color:var(--tekstKleur);
+} 
+
+/* de "buy tickets" knop */
+section:nth-of-type(2) article a {
+    order: 5;
+    margin-top: 4em;
+    border-radius: 0.5em;
+    background-color:var(--hoofdKleur);
+    color:var(--accentKleur5);
+    font-size: 1.2em;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    width:100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* de "show all" knop + de "vorige en volgende" knop */
+section:nth-of-type(2) div{
+    display: flex;
+    gap: 1em;
+    padding: 2em;
+}
+
+/* de "show all" knop */
+section:nth-of-type(2) div a{
+    border-radius: 8em;
+    background-color:var(--accentKleur);
+    color:var(--accentKleur5);
+   
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-weight: bold;
+    height: 4em;
+
+    flex-grow: 1;  /* als flex kind */
+
+    display: flex; /* als flex parent */
+    justify-content: center;
+    align-items: center;
+}
+
+/* de "vorige en volgende" knop */
+section:nth-of-type(2) div button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accentKleur);
+    padding: 0em;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+/* de "vorige en volgende" pijl */
+section:nth-of-type(2) div button img{
+    width: 3em;
+    height: 3em;
+    display: block;
+}
+
+
+
+
+/**********************************/
+  /* section "elrow's planet" */
+/********************************/
+section:nth-of-type(3){
+    background-color:var(--accentKleur2);
+    background-image: url(https://elrow-vapor-bucket.s3.eu-west-1.amazonaws.com/public/assets/images/home/planet-elrow/background.svg);
+    background-repeat: no-repeat; /* bron: https://www.w3schools.com/cssref/css3_pr_background-size.asp */
+    background-size: 100%;
+    background-position: right;
+    height: 40em;
+}
+
+section:nth-of-type(3) h2{ 
+    color:var(--hoofdKleur);
+    font-size: 2em;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    padding-top: 3em;
+} 
+
+section:nth-of-type(3) ul {
+    column-count: 2;
+    column-gap: 2em;
+    margin-top: 2em;
+}
+
+section:nth-of-type(3) h3{ 
+    color:var(--accentKleur5);
+    font-size: 1em;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    margin-left: 1em;
+    width: 6em;
+} 
+
+section:nth-of-type(3) p{ 
+    color:var(--hoofdKleur);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+} 
+
+
+
+
+/*************************************/
+  /* section "our creative world" */
+/************************************/
+section:nth-of-type(4){
+    background-image: linear-gradient( /* gekleurd vlak achter de tekst */
+    182deg, 
+    transparent 4em, 
+    rgba(59, 131, 246, 0.149)
+    4em);
+    margin-top: 3em;
+}
+
+section:nth-of-type(4) h2:nth-of-type(1){ /* de tekst "our" */
+    color:var(--accentKleur3);
+    padding-top: 1.5em;
+} 
+
+section:nth-of-type(4) h2:nth-of-type(2){ /* de tekst "creative world" */
+    color:var(--accentKleur3);
+    padding-bottom: 0.5em;
+} 
+
+section:nth-of-type(4) ul{
+    display: flex;
+    overflow-x: auto;
+    gap:1em; /* ruimte ertussen */
+}
+
+section:nth-of-type(4) article{
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    height: 35em;
+}
+
+section:nth-of-type(4) article h3{
+    order: 2;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+section:nth-of-type(4) article p{
+    order: 3;
+    margin-top: 1em;
+}
+
+section:nth-of-type(4) article img{
+    order: 1;
+    width:100%;
+}
+
+/* de "show all" knop + de "vorige en volgende" knop */
+section:nth-of-type(4) div{
+    display: flex;
+    gap: 1em;
+    padding: 2em;
+}
+
+/* de "show all" knop */
+section:nth-of-type(4) div a{
+    border-radius: 8em;
+    background-color:var(--accentKleur3);
+    color:var(--accentKleur5);
+   
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-weight: bold;
+    height: 4em;
+
+    flex-grow: 1;  /* als flex kind */
+
+    display: flex; /* als flex parent */
+    justify-content: center;
+    align-items: center;
+}
+
+/* de "vorige en volgende" knop */
+section:nth-of-type(4) div button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accentKleur3);
+    padding: 0em;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+/* de "vorige en volgende" pijl */
+section:nth-of-type(4) div button img{
+    width: 3em;
+    height: 3em;
+    display: block;
+}
+
+
+
+
+/*******************************/
+  /* section "our friends" */
+/*****************************/
+section:nth-of-type(5){
+    margin-top: 3em;
+}
+
+section:nth-of-type(5) h2{ 
+    color:var(--accentKleur4);
+}
+
+section:nth-of-type(5) ul{
+    column-count: 2;
+    column-gap: 2em;
+}
+
+section:nth-of-type(5) img{
+    width: 8em;
+    height: 5em;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+
+
+
+/*******************/
+  /* de footer */
+/******************/
+footer{
+    background-image: 
+        linear-gradient( /* gekleurd vlak achter de tekst */
+          178deg, 
+          transparent 3.9em,
+          rgb(242, 238, 7) 4em
+        ),
+        linear-gradient( 
+          182deg, 
+          transparent 3.9em,
+          rgb(249, 213, 9) 4em
+        );
+
+    height: 50em;
+}
+
+/* het logo */
+footer img{
+    width: 4em;
+    height: 3em;
+}
+
+/* footer nav {
+    column-count: 2;
+    column-gap: 2em;
+
+    padding-top: 10em;
+    margin-left: 2em;
+}  */
+
+
+footer nav{
+    column-count: 2;
+    column-gap: 2em;
+    margin-left: 2em;
+}
+
+footer h2{
+    color:var(--tekstKleur);
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-size: 0.9em;
+    padding-left: 0;
+    font-weight: lighter;
+    margin-top: 2em;
+}
+
+footer li{
+    margin-top: 1em;
+}
+
+footer a{
+    color:var(--footerTekstKleur);
+    font-size: 0.9em;
+}
+
+/* algemene informatie in nav */
+footer ul:nth-of-type(4){
+    margin-top: 3em;
+    column-count: 2;
+    column-gap: 2em;
+}
+
+/* de social media icons */
+footer ul:nth-of-type(5){
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+footer ul:nth-of-type(5) img{
+    width: 2em;
+    height: 2em;
+}
+
+
+
+
+
+
+
+
+/*********************************/
+  /* css voor de event pagina */
+/********************************/
+/* logo met link */
+.eventpagina header a:nth-of-type(1){
+    background:none;
+}
+
+.eventpagina header a:nth-of-type(1) img{
+    width: 6em;
+    height: 4em;
+}
+
+/* titel van "upcoming events"+ filter button */
+.eventpagina section:nth-of-type(1){
+    background-image: linear-gradient( /* gekleurd vlak achter de tekst */
+        182deg, 
+        transparent 4em, 
+        rgba(130, 15, 130, 0.144) 
+        4em);
+    display: flex;
+    margin-bottom: 2em;
+}
+
+/*titel van "upcoming events" */
+.eventpagina section:nth-of-type(1) h2{
+    color: var(--accentKleur);
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+/* filter button */
+.eventpagina section:nth-of-type(1) button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accentKleur);
+    padding: 0em;
+    width: 5em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    margin-right: 1em;
+}
+
+.eventpagina section:nth-of-type(1) button img{
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+}
+
+
+
+
+/******************************/
+  /* alle upcoming events */
+/****************************/
+.eventpagina ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.eventpagina section:nth-of-type(2) ul{
+    display: flex;
+    overflow-x: auto;
+    gap:1em; /* ruimte ertussen */
+}
+
+.eventpagina section:nth-of-type(2) li{
+    margin-top: 7em;
+
+}
+.eventpagina section:nth-of-type(2) article{
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+}
+
+.eventpagina section:nth-of-type(2) article h2 em{  
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-style: normal;
+}
+
+.eventpagina section:nth-of-type(2) article h2{
+    order: 3;
+    margin-top: 1em;
+    color:var(--tekstKleur);
+    font-size: 1em;
+    width: 100%;
+}
+
+.eventpagina section:nth-of-type(2) article p:nth-of-type(1) {
+    order: 2;
+    margin-top: 1em;
+}
+
+.eventpagina section:nth-of-type(2) article p:nth-of-type(2) {
+    order: 4;
+    margin-top: 1em;
+}
+
+.eventpagina section:nth-of-type(2) article img{
+    order: 1;
+    width:100%;
+}
+
+
+
+
