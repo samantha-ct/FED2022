@@ -67,10 +67,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De website doorlopen met de screenreader ging niet heel soepel. Op de website zijn de afbeelding van de events belangrijk, want daar staat de meeste informatie op. De screenreader kan natuurlijk de afbeeldingen niet voorlezen en hierdoor mist er soms wat informatie. Verder worden sommige koppen niet samengevoegd en zou je eigenlijk niet kunnen weten dat bepaalde getallen bij bepaalde woorden horen.
 
 
+  <!-- ------------------------------------- -->
+
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  <!-- ------------------------------------- -->
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -138,27 +142,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
 
+  <!-- ------------------------------------- -->
+
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  <!-- ------------------------------------- -->
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1: Samantha      | student 2: Jaiden              | student 3: Frank       | student 4: Guido |
+  | ---                      | ---                            | ---                    | ---              |
+  | code controleren         | gedeelte helemaal tot de rand  | tekst opschuiven       | code controleren |
+  |                          | footer                         | afbeeldingen met tekst |                  |
+  
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - code over het algemeen goed
+  - tussen de buttons hoeft geen "type=button" te staan
+  - css reset toevoegen
 
 </details>
 
@@ -171,6 +177,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
+  <!-- ------------------------------------- -->
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
@@ -179,11 +187,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  <img src="readme-images/links.png" width="375px" alt="de linkjes">
+  <img src="readme-images/buy_tickets.png" width="375px" alt="de buy tickets knop">
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  <img src="readme-images/kleur1.png" width="375px" alt="stuk met deuteranopia">
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -197,6 +209,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  <img src="readme-images/h2.png" width="375px" alt="lettergrootte van h2">
+  <img src="readme-images/kleur1.png" width="375px" alt="stuk met deuteranopia">
+  <img src="readme-images/kleur2.png" width="375px" alt="stuk met tritanopia">
+  <img src="readme-images/kleur3.png" width="375px" alt="stuk met achromatopsia">
+
+  <!-- ------------------------------------- -->
+
 </details>
 
 
@@ -209,11 +228,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb het grootste deel van mijn website al af. Ik hoef alleen nog maar bepaalde dingen goed te krijgen die nu nog niet zo goed werken en de animaties toe te voegen. Verder loop ik wel vast met de css van mijn tweede pagina. Veel moet daarvan hetzelfde zijn als de eerste pagina (header en footer) maar die maakt hij totaal anders. 
+
+  <img src="readme-images/buy_tickets2.png" width="375px" alt="stuk pagina 2">
+  <img src="readme-images/pagina2.png" width="375px" alt="stuk pagina 2">
+  <img src="readme-images/footer.png" width="375px" alt="stuk pagina 2">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+
+  <!-- ------------------------------------- -->
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -230,6 +255,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - nog een punt
   - ...
 
+<!-- ------------------------------------- -->
 </details>
 
 
@@ -240,6 +266,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
+<!-- ------------------------------------- -->
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
@@ -255,6 +282,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
+<!-- ------------------------------------- -->
 </details>
 
 
@@ -262,6 +291,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
+
+<!-- ------------------------------------- -->
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
@@ -272,4 +303,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. bron 2
   3. ...
 
+<!-- ------------------------------------- -->
 </details>
