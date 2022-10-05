@@ -7,98 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elrow</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event.css">
 </head>
-<body class="eventpagina">
+<body>
     <header>
-        <a href="index.html"><img src="./images/logo.png" alt="logo elrow roze"></a>
+        <a href="index.html"><img src="./images/logo.png" alt="image of the elrow logo in pink"></a>
         <!-- <p>Together we make magic happen</p> -->
-        <a href="events.html">upcoming events</a>
+        <a href="events.html" aria-label="go to the upcoming events page">upcoming events</a>
         <button><img src="./images/openen.png"></button> 
 
-        <nav>
-            <section>
-                <img src="./images/logowit.png" alt="logo elrow wit">
+        <nav> <!-- de navigatie -->
+            <div>
+                <img src="./images/logowit.png" alt="image of the elrow logo in white">
                 <button><img src="./images/sluiten.png"></button> 
-            </section>
+            </div>
 
             <button>cambiar a español</button>
 
             <ul>
-                <li><a href="events.html">Upcoming events</a></li>
-                <li><a href="#">Our Creative World</a></li>
-                <li><a href="#">Themes</a></li>
-                <li><a href="#">Music</a></li> 
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Artists Community</a></li>
-                <li><a href="#">elrow Island</a></li>
-                <li><a href="#">elrowTown</a></li>
-                <li><a href="#">Up&Coming</a></li>
-                <li><a href="#">Hurley x elrow</a></li>
-                <li><a href="#">Our history</a></li>
-                <li><a href="#">Press & Resources</a></li>
+                <li><a href="events.html" aria-label="go to the upcoming events page">Upcoming events</a></li>
+                <li><a href="#" aria-label="go to the our creative world page">Our Creative World</a></li>
+                <li><a href="#" aria-label="go to the themes page">Themes</a></li>
+                <li><a href="#" aria-label="go to the music page">Music</a></li> 
+                <li><a href="#" aria-label="go to the sustainability page">Sustainability</a></li>
+                <li><a href="#" aria-label="go to the artists community page">Artists Community</a></li>
+                <li><a href="#" aria-label="go to the elrow island page">elrow Island</a></li>
+                <li><a href="#" aria-label="go to the elrowtown page">elrowTown</a></li>
+                <li><a href="#" aria-label="go to the up&coming page">Up&Coming</a></li>
+                <li><a href="#" aria-label="go to the hurley x elrow page">Hurley x elrow</a></li>
+                <li><a href="#" aria-label="go to the our history page">Our history</a></li>
+                <li><a href="#" aria-label="go to the press & resources page">Press & Resources</a></li>
             </ul>
 
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Purchase Conditions</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#" aria-label="go to the privacy policy page">Privacy Policy</a></li>
+                <li><a href="#" aria-label="go to the purchase conditions page">Purchase Conditions</a></li>
+                <li><a href="#" aria-label="go to the terms & conditions page">Terms & Conditions</a></li>
+                <li><a href="#" aria-label="go to the cookies policy page">Cookies Policy</a></li>
             </ul>
 
             <ul>
                 <li>
-                    <a href="#"><img src="./images/facebookwit.png" alt="logo facebook in het wit"></a>
+                    <a href="#"><img src="./images/facebookwit.png" alt="image of the facebook logo in white"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/instagramwit.png" alt="logo instagram in het wit"></a>
+                    <a href="#"><img src="./images/instagramwit.png" alt="image of the instagram logo in white"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/twitterwit.png" alt="logo twitter in het wit"></a>
+                    <a href="#"><img src="./images/twitterwit.png" alt="image of the twitter logo in white"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/linkedinwit.png" alt="logo linkedin in het wit"></a>
+                    <a href="#"><img src="./images/linkedinwit.png" alt="image of the linkedin logo in white"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/youtubewit.png" alt="logo youtube in het wit"></a>
+                    <a href="#"><img src="./images/youtubewit.png" alt="image of the youtube logo in white"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main> 
-        <button aria-label="help button"><img src="./images/vraagteken.png">Help</button>
-        <section>
-            <h2>Upcoming events</h2>
-            <button><img src="./images/filteren.png"></button> <!-- de filers -->
-        </section>
+        <button aria-label="the help button"><img src="./images/vraagteken.png">Help</button>
 
         <section>
+            <div>
+                <h2>Upcoming events</h2>
+
+                <!-- bron: docent link:https://codepen.io/shooft/pen/gOzGoww?editors=1010  -->
+                <nav>
+                    <ul>
+                        <li>
+                            <button><img src="./images/filteren.png"></button> <!-- de filers -->
+                            <ul>
+                                <h2>cities</h2>
+                                <li>Show all</li>
+                                <li>Amsterdam</li>
+                                <li>Croatia</li>
+                                <li>Las Vegas</li>
+                                <li>Malta</li>
+                                <li>Spain</li>
+                    
+                                <h2>themes</h2>
+                                <li>Show all</li>
+                                <li>Koas Garden</li>
+                                <li>The Rowmuda Triangle</li>
+                                <li>Horroween</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
             <ul>
                 <li>
                     <article>
                         <h2>Obonjan, <em>croatia</em></h2>   
                         <p><time datetime="2022-09-8">Thursday, September 8 2022</time></p>
                         <p>elrow island Croatia</p>
-                        <img src="./images/croatie.png" alt="afbeelding elrow croatie">
-                        <a href="#">buy tickets</a>
+                        <img src="./images/croatie.png" alt="image of elrow in croatie">
+                        <a href="#" aria-label="buy tickets for elrow in obonjan, croatia">buy tickets</a>
                     </article>
                 </li>
+            </ul>
+
+            <ul>
                 <li>
                     <article>
                         <h2>Ibiza, <em>spain</em></h2>   
                         <p><time datetime="2022-09-10">Saturday, September 10 2022</time></p>
                         <p>Rowlympic games, Amnesia Ibiza</p>
-                        <img src="./images/ibiza.png" alt="afbeelding elrow ibiza">
-                        <a href="#">buy tickets</a>
+                        <img src="./images/ibiza.png" alt="image of elrow in ibiza">
+                        <a href="#" aria-label="there are no more tickets for elrow in ibiza, spain">sold out</a>
                     </article>
                 </li>
+            </ul>
+
+            <ul>
                 <li>
                     <article>
                         <h2>Tenerife, <em>spain</em></h2>   
                         <p><time datetime="2022-09-10">Saturday, September 10 2022</time></p>
                         <p>Sambowdromo do Brasil, Glof Costa Adeje</p>
-                        <img src="./images/tenerife.png" alt="afbeelding elrow tenerife">
-                        <a href="#">buy tickets</a>
+                        <img src="./images/tenerife.png" alt="image of elrow in tenerife">
+                        <a href="#" aria-label="buy tickets for elrow in tenerife, spain">buy tickets</a>
                     </article>
                 </li>
                 <li>
@@ -106,74 +137,84 @@
                         <h2>Malta, <em>malta</em></h2>   
                         <p><time datetime="2022-09-24">Saturday, September 24 2022</time></p>
                         <p>Brownx, Uno Club</p>
-                        <img src="./images/malta.png" alt="afbeelding elrow malta">
-                        <a href="#">buy tickets</a>
+                        <img src="./images/malta.png" alt="image of elrow in malta">
+                        <a href="#" aria-label="buy tickets for elrow in malta, malta">buy tickets</a>
                     </article>
                 </li>
             </ul>
         </section>
     </main>
     
-    <footer> 
+    <footer> <!-- de footer -->
         <section>
             <nav>
                 <ul>
                     <h2>sections</h2>
-                    <li><a href="events.html">Upcoming events</a></li>
-                    <li><a href="#">Our Creative World</a></li>
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Festivals</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Our Values</a></li>
-                    <li><a href="#">Artists Community</a></li>
-                    <li><a href="#">VIP Experience</a></li>
-                    <li><a href="#">Our history</a></li>
-                    <li><a href="#">In the news</a></li>
-                    <li><a href="#">Press releases</a></li>
-                    <li><a href="#">Press materials</a></li>
+                    <li><a href="events.html" aria-label="go to the upcoming events page">Upcoming events</a></li>
+                    <li><a href="#" aria-label="go to the our creative world page">Our Creative World</a></li>
+                    <li><a href="#" aria-label="go to the themes page">Themes</a></li>
+                    <li><a href="#" aria-label="go to the sustainability page">Sustainability</a></li>
+                    <li><a href="#" aria-label="go to the festivals page">Festivals</a></li>
+                    <li><a href="#" aria-label="go to the music page">Music</a></li> 
+                    <li><a href="#" aria-label="go to the our values page">Our Values</a></li>
+                    <li><a href="#" aria-label="go to the artists community page">Artists Community</a></li>
+                    <li><a href="#" aria-label="go to the VIP experience page">VIP Experience</a></li>
+                    <li><a href="#" aria-label="go to the our history page">Our history</a></li>
+                    <li><a href="#" aria-label="go to the in the news page">In the news</a></li>
+                    <li><a href="#" aria-label="go to the press releases page">Press releases</a></li>
+                    <li><a href="#" aria-label="go to the press materials page">Press materials</a></li>
                 </ul>
 
                 <ul>
                     <h2>external</h2>
-                    <li><a href="#">Up&Coming</a></li>
-                    <li><a href="#">elrow Island</a></li>
-                    <li><a href="#">Hurley x elrow</a></li>
+                    <li><a href="#" aria-label="go to the up&coming page">Up&Coming</a></li>
+                    <li><a href="#" aria-label="go to the elrow island page">elrow Island</a></li>
+                    <li><a href="#" aria-label="go to the hurley x elrow page">Hurley x elrow</a></li>
                 </ul>
 
+                <img src="./images/logo2.png" alt="image of the elrow logo in black">
+            </nav>
+
+            <nav>
                 <ul>
                     <h2>contact</h2>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Business inquires</a></li>
-                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#" aria-label="go to the contact us page">Contact us</a></li>
+                    <li><a href="#" aria-label="go to the business inquires page">Business inquires</a></li>
+                    <li><a href="#" aria-label="go to the work with us page">Work with us</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="#" aria-label="go to the privacy policy page">Privacy Policy</a></li>
+                    <li><a href="#" aria-label="go to the purchase conditions page">Purchase Conditions</a></li>
                 </ul>
 
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Purchase Conditions</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Cookies Policy</a></li>
+                <ul>        
+                    <li><a href="#" aria-label="go to the terms & conditions page">Terms & Conditions</a></li>
+                    <li><a href="#" aria-label="go to the cookies policy page">Cookies Policy</a></li>
                 </ul>
+            </nav>
 
+            <nav>
                 <ul>
                     <li>
-                        <a href="#"><img src="./images/facebook.png" alt="logo facebook in het zwart"></a>
+                        <a href="#"><img src="./images/facebook.png" alt="image of the facebook logo in black"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./images/instagram.png" alt="logo instagram in het zwart"></a>
+                        <a href="#"><img src="./images/instagram.png" alt="image of the instagram logo in black"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./images/twitter.png" alt="logo twitter in het zwart"></a>
+                        <a href="#"><img src="./images/twitter.png" alt="image of the twitter logo in black"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./images/linkedin.png" alt="logo linkedin in het zwart"></a>
+                        <a href="#"><img src="./images/linkedin.png" alt="image of the linkedin logo in black"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./images/youtube.png" alt="logo youtube in het zwart"></a>
+                        <a href="#"><img src="./images/youtube.png" alt="image of the youtube logo in black"></a>
                     </li>
                 </ul>
             </nav>
-            <img src="./images/logo2.png" alt="logo Elrow in het zwart">
         </section>
     </footer>
     <script src="js/elrow.js"></script>
