@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://elrow.com/en/events/894/london-11132022
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina 
+  de "home" pagina 
   <img src="readme-images/home.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Upcoming events pagina 
+  de "upcoming events" pagina 
   <img src="readme-images/upcomingevents.png" width="375px" alt="upcoming events pagina">
  
 </details>
@@ -66,16 +66,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenreader
   De website doorlopen met de screenreader ging niet heel soepel. Op de website zijn de afbeelding van de events belangrijk, want daar staat de meeste informatie op. De screenreader kan natuurlijk de afbeeldingen niet voorlezen en hierdoor mist er soms wat informatie. Verder worden sommige koppen niet samengevoegd en zou je eigenlijk niet kunnen weten dat bepaalde getallen bij bepaalde woorden horen.
 
-
-  <!-- ------------------------------------- -->
-
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  <!-- ------------------------------------- -->
-
+  Tijdens het tabben komt er nergens een border omheen. Hierdoor heb je geen idee waar je bent. De website maakt wel gebruik van de pointer hand bij links, maar bij veel links gebeurt er niks anders als je erover hovert of als hij active is. Als je bij de pijltjes hovert word de button een beetje lichter, maar daar zie je bent snel overheen. Als een button active is gebeurt er helemaal niks.
 
   #### Motoriek (shocks, elastiekjes)
   Door de elastiekjes om mijn vinger kon ik totaal niet door de site heen scrollen. Je vingers zitten zo dicht op elkaar dat je ze bijna niet kan bewegen en dus ook niet naar beneden kan scrollen.
@@ -142,12 +134,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
 
-  <!-- ------------------------------------- -->
-
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week ging heel goed. Begin van de week liep ik nog een beetje vast met bijv de onderdelen in mijn article in de goede volgorde krijgen. Hiervoor had ik hulp gevraagd aan Yara de student assistent en het bleek heel simpel te zijn. Verder kreeg ik antwoorden op de vragen die ik op dat moment had waardoor ik tijdens het voortganggesprek geen nieuwe vragen had. Doordat mijn vragen op dat moment waren beantwoord maakte ik in mijn vrije tijd groote stappen.
 
-  <!-- ------------------------------------- -->
+  <img src="readme-images/volgorde.png" width="375px" alt="stuk html code">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -177,44 +167,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
-  <!-- ------------------------------------- -->
-
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - geeft niet aan waar de link heen gaat, maar alleen wat voor tekst er staat
+  - kleuren en lettergroote zijn goed te zien
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  De screenreader ging over het algemeen heel soepel. Alle kopjes worden duidelijk aangegeven en de meeste linkjes ook. Alleen de linkjes van de "buy tickets" knop en die van de "show all" knop moeten een aria label krijgen zodat het duidelijk word waarvoor je tickets koop en wat je te zien krijgt als je op de "show all" knop drukt.
+  
   <img src="readme-images/links.png" width="375px" alt="de linkjes">
   <img src="readme-images/buy_tickets.png" width="375px" alt="de buy tickets knop">
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Bij het toetsenbord is het duidelijk door de rand om het element waar hij staat. Bij de navigatie is de tab uit beeld dus dat is een beetje vervelend als je niet weet dat daar de navigatie is. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Met de muis is de pointer hand heel handig dat je weet dat daar een link is. 
 
-  <img src="readme-images/kleur1.png" width="375px" alt="stuk met deuteranopia">
+  Bij allebei moeten wel nog kleuren toegevoegd worden waardoor het tijdens het tabben niet alleen een rand eromheen is en met de muis de hover en active duidelijk te zien is.
 
+  <img src="readme-images/tab.png" width="375px" alt="het logo tijdens het tabben">
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Bij deze 2 onderdelen is het nog steeds bijna onmogelijk om goed door de site heen te scrollen.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik heb verschillende brillen gebruikt tijdens het testen en dit kwam er uit:
+  - central field loss: alleen kleuren en randen te zien - schuin kijken zie je wel alles
+  - peripheral field loss: goed als je focus in rechtvoor je is maar ziet niks aan de zijkant 
+  - combined loss: alles is goed te zien - kleine tekst wel iets minder goed te lezen maar nog wel te doen
 
   <img src="readme-images/h2.png" width="375px" alt="lettergrootte van h2">
+
+  Voor het kleurencontrast heb ik ook verschillende kleurenblindheid gebruikt:
+  - protanopia: kleuren zijn vooral blauw en beetje geel in afbeeldingen - roze is wat lichter blauw/grijs achtig
+  - deuteranopia: kleuren veel blauw en grijs en beetje geel in afbeeldingen - paars is blauw en roze is grijs 
+  - tritanopia: roze is beetje rood/roze achtig - meer kleur dan de vorige 2 - kleuren minder vel 
+  - achromatopsia: alles is grijs - kleuren die normaal donker zijn zijn nog wel donkerder grijs 
+
   <img src="readme-images/kleur1.png" width="375px" alt="stuk met deuteranopia">
   <img src="readme-images/kleur2.png" width="375px" alt="stuk met tritanopia">
   <img src="readme-images/kleur3.png" width="375px" alt="stuk met achromatopsia">
-
-  <!-- ------------------------------------- -->
 
 </details>
 
@@ -238,24 +229,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  <!-- ------------------------------------- -->
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1: Samantha | student 2: Jaiden  | student 3: Frank | student 4: Ying    |
+  | ---                 | ---                | ---              | ---                |
+  | pagina 2 met css    | button             | klikbaar maken   | caroussel          |
+  | responsive article  | dit als er tijd is | html tabbaar     | responsive buttons |
+  | glans bij button    |                    |                  |                    |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - pagina 2 css -> meerder css pagina's: algemeen, home pagina en event pagina
+  - responsive article -> width moest op 100% 
+  - glans bij button -> background-image en linear-gradient 
 
-<!-- ------------------------------------- -->
 </details>
 
 
@@ -266,24 +253,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
-<!-- ------------------------------------- -->
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/eindhome.jpg" width="375px" alt="uitkomst home pagina">
+  <img src="readme-images/eindevents.jpg" width="375px" alt="uitkomst upcoming events pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik ben heel erg trots op het eindresultaat. Ik heb veel dingen geleerd zoals hoe je onderdelen kan groeperen zonder gebruik te maken van een div of class. Ook heb ik meer animatie soorten geleerd en heb ik geleerd om dingen te positioneren.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  <img src="readme-images/elrowplanet.jpg" width="375px" alt="positioneren gelukt">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vond de carroussel wel heel lastig. Uiteindelijk heb ik de code van de docent gebruikt, maar die kan ik zelf nog niet helemaal uitleggen en hij werkt jammer genoeg ook niet zoals ik het graag had gewilt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/carrousel.jpg" width="375px" alt="carrousel niet gelukt">
 
-<!-- ------------------------------------- -->
 </details>
 
 
@@ -292,16 +276,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
 
-<!-- ------------------------------------- -->
-
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. de docent
+  2. yara de student assistent 
+  3. https://codepen.io/shooft/pen/gOzGoww?editors=1010
+  4. https://codepen.io/shooft/pen/yLKWzqy
+  5. https://codepen.io/shooft/pen/KKorGPa?editors=0110
+  6. https://codepen.io/shooft/pen/oNzGJMM
+  7. https://codepen.io/shooft/pen/yLKWzqy
+  8. https://codepen.io/shooft/pen/GRxXboQ
+  9. https://codepen.io/shooft/pen/KKorGPa
+  10. https://codepen.io/shooft/pen/qBogPoM?editors=1010
 
-<!-- ------------------------------------- -->
 </details>
