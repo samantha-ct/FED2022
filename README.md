@@ -261,7 +261,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Ik ben heel erg trots op het eindresultaat. Ik heb veel dingen geleerd zoals hoe je onderdelen kan groeperen zonder gebruik te maken van een div of class. Ook heb ik meer animatie soorten geleerd en heb ik geleerd om dingen te positioneren.
 
-  <img src="readme-images/elrowplanet.png" width="375px" alt="positioneren gelukt">
+  <img src="readme-images/elrow_planet.png" width="375px" alt="positioneren gelukt">
 
   ### Dit was lastig/Is niet gelukt:
   Ik vond de carroussel wel heel lastig. Uiteindelijk heb ik de code van de docent gebruikt, maar die kan ik zelf nog niet helemaal uitleggen en hij werkt jammer genoeg ook niet zoals ik het graag had gewilt. 
