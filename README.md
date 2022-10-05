@@ -175,7 +175,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De screenreader ging over het algemeen heel soepel. Alle kopjes worden duidelijk aangegeven en de meeste linkjes ook. Alleen de linkjes van de "buy tickets" knop en die van de "show all" knop moeten een aria label krijgen zodat het duidelijk word waarvoor je tickets koop en wat je te zien krijgt als je op de "show all" knop drukt.
   
   <img src="readme-images/links.png" width="375px" alt="de linkjes">
-  <img src="readme-images/buy_tickets.png" width="375px" alt="de buy tickets knop">
+  <img src="readme-images/buy_ticket.png" width="375px" alt="de buy tickets knop">
 
   #### Muis en Toetsenbord 
   Bij het toetsenbord is het duidelijk door de rand om het element waar hij staat. Bij de navigatie is de tab uit beeld dus dat is een beetje vervelend als je niet weet dat daar de navigatie is. 
@@ -221,7 +221,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   Ik heb het grootste deel van mijn website al af. Ik hoef alleen nog maar bepaalde dingen goed te krijgen die nu nog niet zo goed werken en de animaties toe te voegen. Verder loop ik wel vast met de css van mijn tweede pagina. Veel moet daarvan hetzelfde zijn als de eerste pagina (header en footer) maar die maakt hij totaal anders. 
 
-  <img src="readme-images/buy_tickets2.png" width="375px" alt="stuk pagina 2">
+  <img src="readme-images/buy_ticket2.png" width="375px" alt="stuk pagina 2">
   <img src="readme-images/pagina2.png" width="375px" alt="stuk pagina 2">
   <img src="readme-images/footer.png" width="375px" alt="stuk pagina 2">
 
@@ -255,8 +255,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/eindhome.jpg" width="375px" alt="uitkomst home pagina">
-  <img src="readme-images/eindevents.jpg" width="375px" alt="uitkomst upcoming events pagina">
+  <img src="readme-images/eindhome.png" width="375px" alt="uitkomst home pagina">
+  <img src="readme-images/eindevents.png" width="375px" alt="uitkomst upcoming events pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik ben heel erg trots op het eindresultaat. Ik heb veel dingen geleerd zoals hoe je onderdelen kan groeperen zonder gebruik te maken van een div of class. Ook heb ik meer animatie soorten geleerd en heb ik geleerd om dingen te positioneren.
