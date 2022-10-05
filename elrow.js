@@ -1,4 +1,6 @@
-/* menu openen */
+/******************************************************************************/
+   /* menu openen bron: docent link: https://codepen.io/shooft/pen/GRxXboQ*/
+/****************************************************************************/
 var openButton = document.querySelector("header > button");
 
 openButton.addEventListener("click", menuOpenen);
@@ -6,10 +8,12 @@ openButton.addEventListener("click", menuOpenen);
 function menuOpenen() {
 	var deNav = document.querySelector("header > nav");
 	
-	deNav.classList.add("open");
+	deNav.classList.add("open"); /* na het klikken wordt de class aan de HTML toegevoegd */
 }
 
-/* menu sluiten */
+/*******************************************************************************/
+   /* menu sluiten bron: docent link: https://codepen.io/shooft/pen/GRxXboQ*/
+/*****************************************************************************/
 var sluitButton = document.querySelector("header nav button");
 
 sluitButton.addEventListener("click", menuSluiten);
@@ -17,32 +21,31 @@ sluitButton.addEventListener("click", menuSluiten);
 function menuSluiten() {
 	var deNav = document.querySelector("header > nav");
 	
-	deNav.classList.remove("open");
-}
-
-/*****************/
-   /* footer */
-/***************/
-var footerLink = document.querySelector("footer li");
-
-footerLink.addEventListener("hover", lijn);
-
-function lijn() {
-	
+	deNav.classList.remove("open"); /* na het klikken wordt de class in de HTML verwijderd */
 }
 
 
 
 
 
+/***************************************************************************************/
+   /* filters bron: docent link:https://codepen.io/shooft/pen/gOzGoww?editors=1010 */
+/*************************************************************************************/
+var eersteButton = document.querySelector("div nav button");
+var eersteSubmenu = document.querySelector("div nav ul ul");
+
+eersteButton.addEventListener("click", toggleEersteMenu);
+
+function toggleEersteMenu() {
+	eersteSubmenu.classList.toggle("open"); 
+}
 
 
 
 
-
-/**********************/
-  /* de carrousel */
-/********************/
+/*******************************************************************************/
+  /* de carrousel bron: docent link: https://codepen.io/shooft/pen/oNzGJMM */
+/*****************************************************************************/
 function createCaroCarrousel(carrouselID) {
 	let carrousel = document.querySelector("#"+carrouselID);
 	let carrouselElementsContainer = carrousel.querySelector(":scope > ul");
