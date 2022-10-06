@@ -232,7 +232,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | student 1: Samantha | student 2: Jaiden  | student 3: Frank | student 4: Ying    |
   | ---                 | ---                | ---              | ---                |
   | pagina 2 met css    | button             | klikbaar maken   | caroussel          |
-  | responsive article  | dit als er tijd is | html tabbaar     | responsive buttons |
+  | responsive article  |                    | html tabbaar     | responsive buttons |
   | glans bij button    |                    |                  |                    |
 
 
