@@ -1,0 +1,412 @@
+/*********************************/
+  /* css voor de event pagina */
+/********************************/
+
+/***************************************************/
+  /* css reset bron: Yara de student-assistent */
+/*************************************************/
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/*****************/
+  /* het logo */
+/****************/
+header a:nth-of-type(1) img{
+    width: 6em;
+    height: 3em;
+    margin-left: 0.8em;
+    margin-right: 0.5em;
+}
+
+
+
+
+/*******************************/
+  /* "upcoming events" knop */
+/******************************/
+header a:nth-of-type(2){  
+    color: var(--accentKleur5);
+    border-radius: 0.6em;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-weight: bold;
+
+    padding-top: 0.7em;
+    padding-right: 1em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+
+    margin-right: 0.5em;
+    margin-left:auto;/* de margin-left wordt zo groot als de ruimte die over is bron: flexbox opdracht */
+
+    white-space: nowrap; /* tekst altijd op 1 regels */
+
+    background-image: /* bron: docent */
+        linear-gradient(
+            135deg,
+            indigo calc(33% + 2em),
+            rgba(76, 0, 130, 0.611) calc(33% + 2em) calc(33% + 3em),
+            indigo calc(33% + 3em)
+        );
+
+    background-size: 300% 100%;
+    animation: glans 3s linear infinite;
+}
+
+@keyframes glans{
+    0% {
+        background-position: right center;
+    }
+    100% {
+        background-position: left center;
+    }
+}
+
+header a:nth-of-type(2):hover{
+    rotate: 357deg;
+}
+
+header a:nth-of-type(2):focus{
+    background-image: /* bron: docent */
+    linear-gradient(
+        135deg,
+        rgba(76, 0, 130, 0.611) calc(33% + 2em),
+        indigo calc(33% + 2em) calc(33% + 3em),
+        rgba(76, 0, 130, 0.611)  calc(33% + 3em)
+    );
+
+    background-size: 300% 100%;
+    animation: glans 3s linear infinite;
+}
+
+header a:nth-of-type(2):active{
+    background-image: /* bron: docent */
+    linear-gradient(
+        135deg,
+        rgba(76, 0, 130, 0.611) calc(33% + 2em),
+        indigo calc(33% + 2em) calc(33% + 3em),
+        rgba(76, 0, 130, 0.611)  calc(33% + 3em)
+    );
+
+    background-size: 300% 100%;
+    animation: glans 3s linear infinite;
+}
+
+
+
+
+/*******************************/
+  /* tekst in de nav */
+/******************************/
+header nav a{
+    color: var(--accentKleur5);
+    margin-left: 1.5em;
+}
+
+
+
+
+/****************************/
+  /* social media icons */
+/**************************/
+header ul:nth-of-type(3) img{
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+}
+
+
+
+
+/**********************************/
+  /* de titel + filter button */
+/********************************/
+div{
+    display: flex;
+}
+
+/* de titel */
+
+div h2{ 
+    color:var(--accentKleur);
+    width: 2em;
+    margin-top: 1em;
+    margin-right: auto; /* de margin-right wordt zo groot als de ruimte die over is bron: flexbox opdracht */
+    margin-bottom: 0.5em;
+
+    text-shadow: /* bron: docent */
+        0 0 .4em var(--bolletjesKleur2),
+        0 0 .4em var(--bolletjesKleur2),
+        0 0 .4em var(--bolletjesKleur2);
+} 
+
+/* filter button */
+div nav button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accentKleur);
+
+    width: 5em;
+    height: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10em;
+    margin-right: 2em;
+}
+
+div nav ul{
+    margin-top: 0%;
+}
+
+div nav button img{
+    width: 2em;
+    height: 2em;
+}
+
+div nav button:hover{ /* bron: docent link: https://codepen.io/shooft/pen/yLKWzqy */
+    transform:translatey(-.5em); 
+    box-shadow: 0 .5em var(--accentKleur2);
+}
+
+div nav button:focus{
+    background-color: var(--accentKleur2);
+    box-shadow:none;
+}
+
+div nav button:active{
+    background-color: var(--accentKleur2);
+    box-shadow:none;
+}
+
+/* bron: docent link:https://codepen.io/shooft/pen/gOzGoww?editors=1010 */
+div ul ul { 
+	max-height:0;
+    margin-right: 2em;
+    margin-left: -9em; /* drop down aan de linker kant van de button */
+
+    overflow: hidden; /* niet zichtbaar */
+
+    background-color: var(--accentKleur2);
+    border-radius: 0.8em;
+	
+	transition:1s;
+}
+
+div ul ul h2{
+    color: var(--hoofdKleur);
+    text-shadow: none;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    text-decoration: underline; /* lijn onder de tekst */
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-left: 0.5em;
+}
+
+div ul ul li{
+    color: var(--accentKleur5);
+    font-weight: bold;
+    margin:1em;
+    cursor: pointer;
+}
+
+div ul ul li:hover{
+    color: var(--hoofdKleur);
+}
+
+div ul ul li:focus{
+    color:var(--stateKleur);
+}
+
+div ul ul li:active{
+    color:var(--stateKleur);
+}
+
+div ul ul.open {
+	max-height:50em;
+}
+
+
+
+
+/*********************/
+  /* alle events */
+/*******************/
+main{
+    background-image: linear-gradient( /* gekleurd vlak achter de tekst */
+    182deg, 
+    transparent 4em, 
+    rgba(130, 15, 130, 0.144) 
+    4em);
+
+    padding-bottom: 5em;
+}
+
+main section ul{
+    display: flex;
+    flex-direction: column;
+}
+
+section > ul li{  /* meest directe ul van de section */
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-right: 2em;
+}
+
+section article h2{
+    order: 3;
+    margin-top: 1em;
+    color:var(--tekstKleur);
+    font-size: 1em;
+    width: 100%;
+}
+
+section article h2 em{  
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-style: normal;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+}
+
+section article p:nth-of-type(1) {
+    order: 2;
+    margin-top: 1em;
+}
+
+section article p:nth-of-type(2) {
+    order: 4;
+    margin-top: 1em;
+}
+
+section article img{
+    order: 1;
+    width:100%;
+} 
+
+section article h3{
+    order: 3;
+    margin-top: 1em;
+    color:var(--tekstKleur);
+    font-size: 1em;
+    width: 100%;
+}
+
+/* de land namen */
+h3 em{  
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    font-style: normal;
+}
+
+/* de datum */
+section p:nth-of-type(1){ 
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    color:var(--tekstKleur);
+} 
+
+/* de "buy tickets" knop */
+section article a {
+    order: 5;
+    margin-top: 4em;
+    border-radius: 0.5em;
+    background-color:var(--hoofdKleur);
+    color:var(--accentKleur5);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    width:100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* bron: docent link: https://codepen.io/shooft/pen/KKorGPa?editors=0110 */
+@keyframes kloppend{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+section article a{
+    animation-name: kloppend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /* blijft altijd door gaan - stopt niet */
+}
+
+section article a:hover{
+    transform:translate(-.25em, -.25em);
+    box-shadow:
+        0 .5em var(--stateKleur), 
+        inset 0 0 var(--stateKleur); 
+}
+
+section article a:focus{
+    background-color:var(--stateKleur);
+    box-shadow:none;
+}
+
+section article a:active{
+    background-color:var(--stateKleur);
+    box-shadow:none;
+}
+
+/* de "sold out" knop */
+section ul:nth-of-type(2) article a {
+    order: 5;
+    margin-top: 4em;
+    color:var(--accentKleur6);
+    background-color: var(--accentKleur5);
+    border-style: solid;
+    border-radius: 0.5em;
+    border-color: var(--accentKleur6);
+    font-size: 1.2em;
+    text-transform: uppercase; /* tekst in allemaal hoofdletters */
+    width:100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+section ul:nth-of-type(2) article a{
+    animation-name: none;
+}
+
+section ul:nth-of-type(2) article a:hover{
+    transform:translate(-.25em, -.25em);
+    box-shadow:
+        0 .5em var(--shadowKleur3),
+        inset 0 0 var(--shadowKleur3);
+}
+
+section ul:nth-of-type(2) article a:focus{
+    color: var(--accentKleur5);
+    background-color:var(--accentKleur6);
+    box-shadow:none;
+}
+
+section ul:nth-of-type(2) article a:active{
+    color: var(--accentKleur5);
+    background-color:var(--accentKleur6);
+    box-shadow:none;
+}
+
+
